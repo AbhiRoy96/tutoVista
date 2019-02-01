@@ -11,4 +11,4 @@ script:
   - eval $(aws ecr get-login --region us-east-2)
   - docker-compose build
   - docker tag bitrac/web:latest 797028035271.dkr.ecr.us-east-2.amazonaws.com/bitrac/web:latest
-  - docker push
+  - docker push 797028035271.dkr.ecr.us-east-2.amazonaws.com/bitrac/web:latest
