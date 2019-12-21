@@ -9,7 +9,7 @@ pipeline {
 
     stage('Publish') {
       steps {
-        sh 'npm start'
+        sh 'node server.js'
       }
     }
 
