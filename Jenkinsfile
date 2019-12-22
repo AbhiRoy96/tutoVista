@@ -14,9 +14,6 @@ pipeline {
     }
 
     stage('Test') {
-      environment {
-        CI = 'true'
-      }
       steps {
         sh 'npm test'
       }
@@ -28,5 +25,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    CI = 'true'
   }
 }
