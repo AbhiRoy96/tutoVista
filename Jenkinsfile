@@ -16,6 +16,7 @@ pipeline {
     stage('Test') {
       steps {
         sh 'npm test'
+        mail(subject: 'Successfully Ran The Code', body: 'All Tests Passed', from: 'royabhishek967@gmail.com', to: 'abhirocks12345@hotmail.com')
       }
     }
 
